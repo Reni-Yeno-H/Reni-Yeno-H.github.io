@@ -1,2 +1,2 @@
 # ReniBakeryWebPage
-CISC 3140 Project of creating webpage using HTML and CSS.
+CISC 3140 Project of creating webpage using HTML and CSS and Javascript.
