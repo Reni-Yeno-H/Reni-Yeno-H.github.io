@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+    <!--
+    CISC 3140 Summer Term Project
+    
+    Reni's Bakery
+    Author: Hao Ren Yuan
+    Date: June 11, 2021
+
+    Filename: home.html
+    -->            
+        <title> Reni's Gaming Lobby </title>
+
+        <meta charset="utf-8"/>
+        <meta name="keywords" content="game, lobby, rating, chat, competitive"/>
+        
+        <link href="ct_base.css" type="text/css" rel="stylesheet">
+        <link href="ct_layout2.css" type="text/css" rel="stylesheet">
+
+        <style>
+            div.sticky {
+              position: -webkit-sticky;
+              position: sticky;
+              width: 22%;
+              top: 0px;
+              float: right;
+              animation: mymove 5s infinite;
+            }
+            @keyframes mymove {
+            50% {box-shadow: 10px 20px 30px orange;}
+            }
+        </style>
+
+    </head>
+    <body> 
+
+        <div class="sticky">
+            Jukebox:<br>
+                <audio id="Test_Audio" controls loop > 
+              
+                    <source src="Clockwork Planet OST - 02 chronograph.mp3" type="audio/mpeg"> 
+                    <p>If you are reading this, it is because your browser does not support the audio element.</p>
+                </audio><br>
+
+            <script>
+                var music = document.getElementById("Test_Audio");
+                  
+                music.volume = 0.2;
+
+            </script>
+        </div>
+
+        <p> Welcome to <em>Reni's Bakery </em>
+        </p>
+
+        <p> Welcome to <em>Reni's Gaming </em> Lobby. 
+        
+        </p>
+
+        <header> 
+            <h1> Reni's Bakery </h1>
+            <h1> Reni's Gaming Lobby </h1>
+            <a href="ct_start.html"> <img src="ct_logo2.png" alt="Curbside Thai"/> </a>
+
+            <!-- <a href="https://www.hitwebcounter.com" target="file:///Users/haorenyuan/Desktop/CISC3140WebDev/Project/home.html"> -->
+            <!-- <img src="https://hitwebcounter.com/counter/counter.php?page=7824723&style=0005&nbdigits=5&type=page&initCount=0" title="Visitor Counter" Alt="Visitor counter"   border="0" /></a> -->            
+            
+            <!-- <a href="https://www.freecounterstat.com" title="Visitor Counter"> -->
+                <visit>You're our 
+                <img src="https://counter6.stat.ovh/private/freecounterstat.php?c=6lhzmzmg8w861kfnr6l8s4bcx2hcb7dw" border="0" title="Visitor Counter" alt="Visitor counter"></a>
+                visitor since June 11, 2021</visit>
+
+            <nav>
+                <ul>
+                    <li> <a href="ct_about.html">About </a></li>
+                    <li> <a href="ct_locations.html">Locations </a></li>
+                    <li> <a href="ct_menu.html">Menu </a></li>
+                    <li> <a href="ct_reviews.html">Review </a></li>
+                    <li> <a href="ct_catering.html">Catering </a></li>
+                    <li> <a href="ct_contact.html">Contact </a></li>
+                </ul>
+            </nav>
+        </header>
+        <article> 
+
+            <h1> About Us</h1>
+            <img src="ct_photo1.png" alt=""/>
+
+            <p> <strong> Curbside Thai </strong> brings the rich flavor of Thailand to 
+            North Carolina. Master Chef Sajja Adulet, with over 35 
+            years of experience at the House of Asia, now offers 
+            that same fine dining to the streets of Charlotte 
+            with our modern mobile food truck. </p>
+            
+            <p> This is not bland vendor food packaged in greasy 
+            paper boxes! Sample his acclaimed cuisine at our various 
+            mobile locations throughout downtown Charlotte from 
+            11 a.m. to 7 p.m. on Monday through Thursday, and 
+            11 a.m. to 11 p.m. on Friday and Saturday. Taste the 
+            difference! If you can't get away from your desk, 
+            <em>Curbside Thai will deliver. </em> </p>
+            
+            <p> Contact us to cater your next party and experience 
+            what <cite>Carolina Traveler </cite> calls <q> the finest Asian food 
+            on or off the streets of Charlotte. </q></p>
+
+            <iframe src="https://www.addictinggames.com/embed/html5-games/20398" width="1000" height="700" scrolling="yes"></iframe>
+            
+            
+            <!-- <audio src="Clockwork Planet OST - 02 chronograph.mp3" audio.volume = 0.5; controls>
+            <p>If you are reading this, it is because your browser does not support the audio element.</p>
+            </audio> -->
+
+            <!--<script>
+            var audio = document.getElementById("myaudio");
+            audio.volume = 0.5;
+            </script> -->
+            
+        </article>
+        
+        <footer>
+            Curbside Thai 411 Belde Drive ,Charlotte NC 28201 704-555-1151
+        </footer>
+
+    </body>
+</html>
