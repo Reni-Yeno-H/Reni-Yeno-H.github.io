@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    
         
     <!--
     CISC 3140 Summer Term Project
     
     Reni's Bakery
     Author: Hao Ren Yuan
-    Date: June 11, 2021
+    Date: June 11, 2021 - July 8,2021
 
     Filename: home.html
-    -->            
+    -->         
+    <head>   
         <title> Reni's Bakery </title>
         
 
         <meta charset="utf-8"/>
-        <meta name="keywords" content="game, lobby, rating, chat, competitive"/>
+        <meta name="keywords" content="baking, bakery, food, good food, fast food"/>
         
-        <link href="visual_base.css" type="text/css" rel="stylesheet">
         <link href="visual_layout.css" type="text/css" rel="stylesheet">
-        <link href="header.css" type="text/css" rel="stylesheet">
-        <script src="hideScrollable.js" defer></script>
+        <script src="user_system.js" async></script>
 
-        <!-- You're our 
+        You're our 
         <img src="https://counter6.stat.ovh/private/freecounterstat.php?c=6lhzmzmg8w861kfnr6l8s4bcx2hcb7dw" border="0" title="Visitor Counter" alt="Visitor counter">
-        visitor since June 11, 2021 -->
+        visitor since June 11, 2021
+
+        <!-- <form id="memberForm" method="post">
+            <label for="username">Username</label>
+            <input id="username" name="user" type="text" placeholder="Enter Username"/>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="pwd" placeholder="Enter Password"/>
+            <button type="submit" value="Login" onclick="displayGreeting()">Login</button>
+         </form> -->
+        
+         <br>
+         <form id="memberForm" method="post">
+            <div id="loginMessage">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password">
+                <button type="submit" onclick="displayGreeting()" >Login</button>
+                <button id="reset" type="submit" action="#" >Reset</button>
+                <!-- <button id="logout" type="submit" action="#" >Logout</button> -->
+            </div>
+         <hr>
+         <!-- <div id="loginMessage"></div> -->
+         <!-- <div id="loginSystem"></div> -->
+        </form>
+
     </head>
     
     <body> 
@@ -34,9 +58,9 @@
                 <span class="smoke"></span>
             </div>
 
-            <div class="musicmachine">Jukebox:
+            <div class="musicmachine"><br>
             *******
-            ||||||||||||||||||
+            Jukebox:
             </div>
                 <audio id="Test_Audio" controls loop> 
               
@@ -60,37 +84,53 @@
             
             <nav>
                 <ul>
-                    <li> <a href="home.html">Home </a></li>
-                    <li> <a href="menu.html">Menu </a></li>
-                    <li> <a href="order.html">Order </a></li>
-                    <li> <a href="review.html">Review </a></li>
-                    <li> <a href="gallery.html">Gallery </a></li>
-                    <li> <a href="entertainment.html">Secret Entertainment </a></li>
+                    <li> <a class="home" href="home.html">Home </a></li>
+                    <li> <a class="food_menu" href="food_menu.html">Food Menu </a></li>
+                    <li> <a class="event_calendar" href="event_calendar.html">Event Calendar </a></li>
+                    <li> <a class="review" href="review.html">Review </a></li>
+                    <li> <a class="gallery" href="gallery.html">Gallery </a></li>
+                    <li> <a class="entertainment" href="entertainment.html">Entertainment </a></li>
                 </ul>
             </nav>
         </header>
-        <article> 
+
+        <article id="about_us"> 
                         
             <h1> About Us</h1>
             <img src="buildingDecor.jpg" alt=""/>
 
-            <p> <strong> Curbside Thai </strong> brings the rich flavor of Thailand to 
-            North Carolina. Master Chef Sajja Adulet, with over 35 
-            years of experience at the House of Asia, now offers 
-            that same fine dining to the streets of Charlotte 
-            with our modern mobile food truck. </p>
+            <p> <strong> Reni's Bakery </strong> isn't your ordinary bakery.
+            Not only does it brings the rich flavor of what other bakery cannot
+            do in the same qualitative manner, we can surpass the daily quota
+            of producing bakery foods with haste. Master Chef Reni Yeno, with over 50 
+            years of experience, has infused AI learning and automation in bakery goods
+            that matches the same food made by his own hands! </p>
             
-            <p> This is not bland vendor food packaged in greasy 
-            paper boxes! Sample his acclaimed cuisine at our various 
-            mobile locations throughout downtown Charlotte from 
+            
+                <ul>
+                   <li><strong>Hungry At Home?</strong></li>
+                   <li><strong>Get-n-Go</strong></li>
+                   <li><strong>Too tired to cook?</strong></li>
+                   <li><strong>Family and Friend Gatherings</strong></li>
+                </ul>
+
+            <h2> We Can Delivery</h2>
+            <ol>
+                <li>11:00 AM - 7:00 AM (Mon, Tues, Wed, Thurs)</li>
+                <li>11:00 AM - 11:00 PM (Fri, Sat)</li>
+            </ol>
+
+            <p> Do be warned that you might not be able control your addictions
+            after your first taste. Although there are no samples at this time,
+            you can head over at Reni's Bakery throughout Genbury West Street from
             11 a.m. to 7 p.m. on Monday through Thursday, and 
             11 a.m. to 11 p.m. on Friday and Saturday. Taste the 
-            difference! If you can't get away from your desk, 
-            <em>Curbside Thai will deliver. </em> </p>
+            difference if you have exquisite taste! If you need food, 
+            <em>Reni Yeno will deliver by drone from the skies or land. </em> </p>
             
-            <p> Contact us to cater your next party and experience 
-            what <cite>Carolina Traveler </cite> calls <q> the finest Asian food 
-            on or off the streets of Charlotte. </q></p>
+            <p> Contact us to order your selected bakery foods as
+             <cite>Reni Yeno </cite> once said <q> If you can taste the heavens
+            in the streets of Genbury, this is it. </q></p>
               
         </article>
         
@@ -99,4 +139,5 @@
         </footer>
 
     </body>
+
 </html>

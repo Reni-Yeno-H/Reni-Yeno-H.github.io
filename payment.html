@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+        
+    <!--
+    CISC 3140 Summer Term Project
+    
+    Reni's Bakery
+    Author: Hao Ren Yuan
+    Date: June 11, 2021 - July 8,2021
+
+    Filename: payment.html
+    -->            
+    <head>
+        <title> Payment </title>
+        <meta charset="utf-8"/>
+        <meta name="keywords" content="baking, bakery, food, good food, fast food"/>
+        
+        <link href="visual_layout.css" type="text/css" rel="stylesheet">
+        <link href="payment_layout.css" type="text/css" rel="stylesheet">
+        <script src="user_system.js" async></script>  
+        <script type="text/javaScript" src="payment.js"></script>
+
+    </head>
+    
+    <body> 
+        <div class="sticky">
+
+            <div class="wrapper">
+                <span class="smoke"></span>
+            </div>
+    
+            <div class="musicmachine"><br>
+                *******
+                Jukebox:
+            </div>
+                <audio id="Test_Audio" controls loop> 
+              
+                    <source src="Clockwork Planet OST - 02 chronograph.mp3" type="audio/mpeg"> 
+                    <p>If you are reading this, it is because your browser does not support the audio element.</p>
+                </audio><br>
+    
+            <script>
+                var music = document.getElementById("Test_Audio");
+                music.volume = 0.2;
+            </script>
+    
+        </div>    
+        <header> 
+            
+            <a href="home.html"> <img src="header_logo.png" alt="Reni's Bakery"/> </a>
+            
+            <nav>
+                <ul>
+                    <li> <a class="home" href="home.html">Home </a></li>
+                    <li> <a class="food_menu" href="food_menu.html">Food Menu </a></li>
+                    <li> <a class="event_calendar" href="event_calendar.html">Event Calendar </a></li>
+                    <li> <a class="review" href="review.html">Review </a></li>
+                    <li> <a class="gallery" href="gallery.html">Gallery </a></li>
+                    <li> <a class="entertainment" href="entertainment.html">Entertainment </a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="paySection">
+            <h1>Payment Form</h1>
+            
+            <form id="order" name="order">       
+              <table id="orderTable">
+                 <tr>
+                    <td>
+                       <input type="text" name="foodName" id="foodName" readonly  /> 
+                       X
+                       <input type="text" name="foodQty" id="foodQty"  readonly />       
+                       <br>
+                       <input type="text" name="foodName2" id="foodName2" readonly  /> 
+                        X
+                        <input type="text" name="foodQty2" id="foodQty2"  readonly />                                        
+                    </td>                
+                    <td>
+                       <input type="text" name="orderCost" id="orderCost" size="10"  readonly />
+                       <br>
+                       <input type="text" name="orderCost2" id="orderCost2" size="10"  readonly />
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                       <input type="text" name="shippingType" id="shippingType"  readonly />
+                    </td>
+                    <td>
+                       <input type="text" name="shippingCost" id="shippingCost" size="10" readonly  />
+                    </td>
+                 </tr>        
+                 <tr>
+                    <td class="rightA">Subtotal</td>
+                    <td class="outcell">
+                       <input type="text" name="subTotal" id="subTotal" size="10" readonly  />
+                    </td>
+                 </tr>
+      
+                 <tr>
+                    <td class="rightA">Tax (8%)</td>
+                    <td>
+                       <input type="text" name="salesTax" id="salesTax" size="10" readonly  />
+                    </td>
+                 </tr>
+      
+                 <tr>
+                    <td class="rightA">TOTAL</td>
+                    <td>
+                       <input type="text" name="cartTotal" id="cartTotal" size="10" readonly  />
+                    </td>
+                 </tr>
+              </table>
+            </form>      
+      
+            <form id="credit" name="credit" method="post" action="payment_validation.html">         
+               <fieldset id="creditcard">
+                  <legend>Credit Information</legend>
+      
+                  <label for="cardHolder">Card Holder*</label>
+                  <input name="cardHolder" id="cardHolder" required type="text" />                       
+                  <br>
+                  <label for="cardNumber">Credit Card Number*</label>
+                  <input name="cardNumber" id="cardNumber" required type="text"
+                         pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+                  <br>
+                  <label for="expDate">Expiration Date*</label>
+                  <input name="expDate" id="expDate" required type="text" placeholder="mm/yyyy" />
+                  <br>
+                  <label for="cvc">CVC*</label>
+                  <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text"/>
+               </fieldset>
+      
+               <p id="footnote">* - Required Item</p>        
+               <input type="submit" id="subButton" onclick="purchaseGreeting()" value="Submit Payment" />         
+            </form>
+      
+         </section>
+        
+        
+
+        <footer>
+            &#8859; Reni's Bakery Earth West Street ,Genbury NY &#8859; ꧂꧂꧂-꧂꧂꧂-꧂꧂꧂꧂
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/*
+	CISC 3140 Summer Term Project
+    
+    Reni's Bakery
+    Author: Hao Ren Yuan
+    Date: June 11, 2021 - July 8,2021
+
+    Filename: gallery_layout.css
+*/
+
+#foods_icons{
+    overflow: auto; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-decoration: dashed;
+}
+.food_image{
+    border: solid rgb(230, 164, 24) 2px;
+    display: inline-block;
+    max-width: 100px;
+    max-height: 100px;
+    width: 15%;
+
+}
+.photo_icons{
+    display: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:dashed 10px rgb(230, 164, 24);
+
+}

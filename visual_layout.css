@@ -1,11 +1,59 @@
 @charset "utf-8";
 
 /*
-   Filename: visual_layout.css
+	CISC 3140 Summer Term Project
+    
+    Reni's Bakery
+    Author: Hao Ren Yuan
+    Date: June 11, 2021 - July 8,2021
 
-   This file contains the layout styles used in the Reni's Bakery website
-
+    Filename: visual_layout.css
 */
+
+/* button#logout{
+	display: block;
+	
+} */
+ article#about_us ul li:first-of-type{
+	list-style-image: url("hungry.png");
+ }
+ 
+ article#about_us ul li:nth-of-type(2){
+	list-style-image: url("getngo.png");
+ }
+ 
+ article#about_us ul li:nth-of-type(3){
+	list-style-image: url("tiredcook.png");
+ }
+
+ article#about_us ul li:last-of-type{
+	list-style-image: url("familynfriends.png");
+ }
+
+a.home{
+    cursor: url(home_cursor.png), auto;
+}
+
+a.food_menu{
+	cursor: url(shopping_cursor.png), auto;
+}
+
+a.event_calendar{
+	cursor: url(calendar_cursor.png), auto;
+}
+
+a.review{
+	cursor: url(review_cursor.png), auto;
+}
+
+a.gallery{
+	cursor: url(gallery_cursor.png), auto;
+}
+
+a.entertainment{
+	cursor: url(entertainment_cursor.png), auto;
+}
+
 head title{
 	color: darkblue;
 }
@@ -26,28 +74,58 @@ header h1{
 	color: darkblue;
 }
 
-audio { width: 50px; }
-
-div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    background-color: rgb(128, 0, 75);
-    width: 8%;
-    top: 0px;
-    float: right;
-    animation: mymoveAudio 5s infinite;
+header img{
+	padding-bottom: 40px;
 }
 
+audio { width: 50px; }
+
+div.sticky,div.sticky#sticky1 {
+    position: -webkit-sticky;
+    position: sticky;
+	right: 20px;
+    background-color: rgb(128, 0, 75);
+    width: 8%;
+    top: -30px;
+    float: right;
+    animation: mymoveAudio 5s infinite;
+	border-radius: 50px 50px 5px 5px;
+	  
+}
+
+
 @keyframes mymoveAudio {
-    50% {box-shadow: 10px 20px 30px orange;}
+    50% {box-shadow: 2px 20px 20px rgb(128, 0, 75);}
 }
 
 div.musicmachine{
+	size: 5px;
 	color: rgb(223, 192, 18);
 }
 
+#paySection{
+	text-align: center;
+	
+}
+
+form#order{
+	padding-left: 25%;
+}
+
+
+
 img, object, embed, video {
 	max-width: 100%;
+}
+
+body audio{
+	padding-left: 20px;
+}
+
+img.thumbs_up{/* 
+	display: center; */
+	margin-left: 30%;
+	margin-right: 50%;
 }
 
 body {
@@ -87,8 +165,8 @@ nav ul li a:visited {
 	color: #222;
 }
 nav ul li a:hover {
-	background-color: #222;
-	color: white;
+	background-color: wheat;
+	color: black;
 }
 nav ul li a:focus {
 	outline: thin dotted;
