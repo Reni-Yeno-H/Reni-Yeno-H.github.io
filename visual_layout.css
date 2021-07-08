@@ -14,21 +14,28 @@
 	display: block;
 	
 } */
- article#about_us ul li:first-of-type{
+article#about_us ul li:first-of-type{
 	list-style-image: url("hungry.png");
- }
+}
  
- article#about_us ul li:nth-of-type(2){
+article#about_us ul li:nth-of-type(2){
 	list-style-image: url("getngo.png");
- }
+}
  
- article#about_us ul li:nth-of-type(3){
+article#about_us ul li:nth-of-type(3){
 	list-style-image: url("tiredcook.png");
- }
+}
 
- article#about_us ul li:last-of-type{
+article#about_us ul li:last-of-type{
 	list-style-image: url("familynfriends.png");
- }
+}
+
+aside > nav > ul{
+  display: block;
+  margin-left: 40px;
+  padding-right: 900px;
+  display: table-cell ;
+}
 
 a.home{
     cursor: url(home_cursor.png), auto;
@@ -140,13 +147,12 @@ img.thumbs_up{/*
 }
 
 body {
+	background: ivory;
 	margin-left: auto;
 	margin-right: auto;
 	width: 81.9%;
 	padding-left: 4.55%;
 	padding-right: 4.55%;
-	clear: none;
-	float: none;
 	min-height: 100%;
 }
 nav {
