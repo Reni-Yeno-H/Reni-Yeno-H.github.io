@@ -1,4 +1,4 @@
 # ReniBakeryWebPage
-CISC 3140 Project of creating webpage using HTML and CSS and Javascript.
+CISC 3140 project of creating a webpage from scratch using HTML, CSS, and Javascript.
 
-Link to website: https://reni-yeno-h.github.io/ReniBakeryWebPage/
+## To visit my website, click [here](https://reni-yeno-h.github.io/ReniBakeryWebPage/).
